@@ -105,9 +105,9 @@ function fetchGifs(offset, searchterm, clear) {
     if (clear) {
       clearGifs();
     }
-    apiurl = "https://api.giphy.com/v1/gifs/search?api_key=zY2jNXB6UERsJOv9QweHDlhwn7dU32bO&q="+searchterm+"&limit=10&offset="+offset+"&rating=G&lang=en";
+    apiurl = "https://api.giphy.com/v1/gifs/search?api_key=4QNXID8zLl49orkCPVJqZ2Rizjka5PsK&q="+searchterm+"&limit=10&offset="+offset+"&rating=G&lang=en";
   } else {
-    apiurl = "https://api.giphy.com/v1/gifs/trending?api_key=zY2jNXB6UERsJOv9QweHDlhwn7dU32bO&limit=10&offset="+offset+"&rating=G";
+    apiurl = "https://api.giphy.com/v1/gifs/trending?api_key=4QNXID8zLl49orkCPVJqZ2Rizjka5PsK&limit=10&offset="+offset+"&rating=G";
   }
   $.ajax({url: apiurl, success: function(result){
     for (i = 0; i < result.data.length; i++) { 
